@@ -3,7 +3,7 @@
 .home_div {
   position: relative;
   background-color: #d0230d;
-  height: 100vh;
+  height: auto;
 }
 
 /* header styling */
@@ -13,6 +13,12 @@ header {
   color: white;
   height: 58px;
   letter-spacing: 0.3px;
+}
+
+.header_div {
+  z-index: 6;
+  background-color: #d0230d;
+  position: relative;
 }
 
 #h1 {
@@ -53,6 +59,10 @@ header {
   color: white !important;
 }
 
+.navbar {
+  z-index: 5;
+}
+
 /* logo styling */
 
 .logo {
@@ -73,6 +83,7 @@ header {
   position: absolute;
   top: 17px;
   left: 33px;
+  z-index: 6;
 }
 
 /* SafeStorage component styling */
@@ -126,10 +137,57 @@ header {
   background-color: #a91f0c;
 }
 
-/* width: Hug (168px)
-height: Hug (48px)
-top: 328px
-left: 90px
-padding: 4px 0px 4px 0px
-border-radius: 100px
-gap: 8px */
+.caravanImgDiv {
+  height: 427px;
+  width: 635px;
+  overflow: hidden;
+  /* object-position: 75% 0; */
+  position: absolute;
+  top: -70px;
+  right: -220px;
+  border-radius: 1000px 0px 0px 0px;
+  z-index: 1;
+}
+
+.caravanImg {
+  object-fit: cover;
+  object-position: 35%;
+  width: 900px;
+  height: 900px;
+  margin-top: -300px;
+}
+
+/* WhatWeOffer styling */
+
+.whatWerOfferDiv {
+  background-color: black;
+  color: white;
+  height: 489px;
+  width: auto;
+  margin-left: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.whatWerOfferDiv h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  top: 56px;
+}
+
+/* HowItWorks styling */
+
+.howItWorksDiv {
+  background-color: white;
+  height: 489px;
+  width: auto;
+  margin-left: 15px;
+  position: relative;
+  z-index: 2;
+}

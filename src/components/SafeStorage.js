@@ -1,3 +1,5 @@
+import caravan from "../images/safeStorageImg.png";
+
 function SafeStorage() {
   return (
     <div className="safeStorage">
@@ -6,6 +8,9 @@ function SafeStorage() {
       </div>
       <div className="contactBtnDiv">
         <button>Contact Us</button>
+      </div>
+      <div className="caravanImgDiv">
+        <img className="caravanImg" src={caravan} alt="" />
       </div>
     </div>
   );
