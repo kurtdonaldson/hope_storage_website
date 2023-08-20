@@ -1,11 +1,15 @@
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
+import logo from "../images/hope_storage_logo.png";
 
 function Home() {
   return (
-    <div>
+    <div className="home_div">
       <Header />
       <Navigation />
+      <div className="image_div">
+        <img className="logo" src={logo} alt="" />
+      </div>
     </div>
   );
 }
