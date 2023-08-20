@@ -1,14 +1,17 @@
 import "../styles/home.css";
 import React from "react";
-// import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function Home() {
   return (
-    <header className="d-flex justify-content-between">
-      <div>Hope Storage</div>
-      <div>027 454 3813</div>
+    <header className="d-flex justify-content-between align-items-center container-fluid">
+      <div className="h1_div d-flex align-items-center">
+        <h1 id="h1">Hope Storage</h1>
+      </div>
+      <div className="phone_number_div d-flex align-items-center justify-content-between">
+        <FaPhoneAlt className="phone_icon" />
+        <p className="header_phone_number m-0">027 454 3813</p>
+      </div>
     </header>
   );
 }
