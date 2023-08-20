@@ -2,12 +2,14 @@
 
 .home_div {
   position: relative;
+  background-color: #d0230d;
+  height: 100vh;
 }
 
 /* header styling */
 
 header {
-  background-color: #d0230d;
+  /* background-color: #d0230d; */
   color: white;
   height: 58px;
   letter-spacing: 0.3px;
@@ -67,8 +69,67 @@ header {
   overflow: hidden;
   border-radius: 50%;
   object-position: 75% 0;
-  border: 2px solid white;
+  border: 4px solid white;
   position: absolute;
   top: 17px;
   left: 33px;
 }
+
+/* SafeStorage component styling */
+
+.safeStorage {
+  background-color: white;
+  height: 332px;
+  width: auto;
+  margin-left: 15px;
+  position: relative;
+}
+
+.safeStorage_heading_div {
+  position: relative;
+  left: 91px;
+  top: 68px;
+  width: 393px;
+}
+
+.safeStorage_heading_div h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.contactBtnDiv {
+  position: relative;
+  left: 91px;
+  top: 80px;
+}
+
+.contactBtnDiv button {
+  width: 168px;
+  height: 48px;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #d0230d;
+  color: white;
+  border: none;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 83.333% */
+  letter-spacing: 0.1px;
+  transition: 0.3s;
+}
+
+.contactBtnDiv button:hover {
+  background-color: #a91f0c;
+}
+
+/* width: Hug (168px)
+height: Hug (48px)
+top: 328px
+left: 90px
+padding: 4px 0px 4px 0px
+border-radius: 100px
+gap: 8px */
