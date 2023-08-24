@@ -179,6 +179,7 @@ header {
 
 .whatWerOfferDiv {
   background-color: black;
+  position: relative;
   color: white;
   height: 489px;
   width: auto;
@@ -191,12 +192,33 @@ header {
   color: #fff;
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   position: relative;
   top: 56px;
+}
+
+/* .parking_carousel {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  padding: 32px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+} */
+
+.carouselDiv {
+  margin-top: 148px;
+}
+
+.carouselDiv div {
+  height: 220px;
 }
 
 /* HowItWorks styling */
