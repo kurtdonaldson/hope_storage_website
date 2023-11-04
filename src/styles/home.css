@@ -210,6 +210,17 @@ header {
   position: relative;
 }
 
+.carousel_position_1 {
+  left: 0%;
+}
+
+.carousel_position_2 {
+  left: -33%;
+}
+.carousel_position_3 {
+  left: -66.5%;
+}
+
 .carousel_containers {
   /* border: 1px solid red; */
   background: black;
@@ -238,21 +249,43 @@ header {
   color: #777777;
   position: absolute;
   font-size: 3em;
-  top: 39%;
-  transition: 0.3s;
+  top: 55%;
 }
 
-.carousel_arrows:hover {
+/* .carousel_arrows:hover {
   cursor: pointer;
   color: #dedede;
-}
+} */
 
 .left_arrow {
-  left: 1%;
+  left: 3%;
+  z-index: 99;
 }
 
 .right_arrow {
-  right: 41%;
+  right: 2%;
+  z-index: 99;
+}
+
+.btn-slide {
+  height: 38px;
+  width: 45px;
+  position: relative;
+  top: 38px;
+  background-color: rgba(250, 235, 215, 0);
+  border: none;
+}
+
+.arrow_img {
+  top: -27px;
+  left: -10px;
+  position: relative;
+  color: #959595;
+  transition: 0.3s;
+}
+
+.arrow_img:hover {
+  color: #ececec;
 }
 
 /* Need to margin left -32.5vw for each click */

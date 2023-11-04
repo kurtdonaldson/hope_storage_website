@@ -1,30 +1,36 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 import "../styles/home.css";
 import { BiSolidCar } from "react-icons/bi";
 import { HiCurrencyDollar } from "react-icons/hi";
 import { GoContainer } from "react-icons/go";
 import { LiaFileContractSolid } from "react-icons/lia";
 import { BsKey } from "react-icons/bs";
-import { LiaLessThanSolid } from "react-icons/lia";
-import { LiaGreaterThanSolid } from "react-icons/lia";
+import NextSlideBtn from "./NextSlideBtn";
+import PrevSlideBtn from "./PreviousSlideBtn";
 
 function WhatWeOffer() {
+  // Have different classes with different margins. Change these margins with button clicks
+
+  // const [slideIndex, setSlideIndex] = useState(1);
+
+  const nextSlide = () => {};
+
+  const prevSlide = () => {};
+
   return (
     <div className="whatWerOfferDiv d-flex flex-column ">
       <div>
         <h2>What we offer</h2>
       </div>
       <div className="carouselDiv">
-        <div className="carousel_outer_container">
-          <div className="carousel_arrows left_arrow">
-            <LiaLessThanSolid />
-          </div>
-          <div className="carousel_arrows right_arrow">
-            <LiaGreaterThanSolid />
-          </div>
+        <div className="carousel_arrows left_arrow">
+          <PrevSlideBtn moveSlide={prevSlide} direction={"prev"} />
+        </div>
+        <div className="carousel_arrows right_arrow">
+          <NextSlideBtn moveSlide={nextSlide} direction={"next"} />
+        </div>
+        <div className="carousel_outer_container carousel_position_2">
           <div className="parking_carousel carousel_containers">
             <div className="carousel_inner_containers">
               <BiSolidCar className="car_icon" />
