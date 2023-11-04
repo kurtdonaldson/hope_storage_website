@@ -200,26 +200,64 @@ header {
   top: 56px;
 }
 
-/* .parking_carousel {
-  width: auto;
-  height: auto;
-  position: relative;
+.carouselDiv {
+  overflow: hidden;
+}
+
+.carousel_outer_container {
   display: flex;
-  padding: 32px 0px;
-  flex-direction: column;
+  width: max-content;
+  position: relative;
+}
+
+.carousel_containers {
+  /* border: 1px solid red; */
+  background: black;
+  width: 32.5vw;
+  height: 220px;
+  display: flex;
   align-items: center;
-  gap: 22px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-} */
+  justify-content: center;
+}
+
+.carousel_inner_containers {
+  background-color: rgb(38, 38, 38);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: 85%;
+  border-radius: 5px;
+}
 
 .carouselDiv {
   margin-top: 148px;
 }
 
-.carouselDiv div {
-  height: 220px;
+.carousel_arrows {
+  color: #777777;
+  position: absolute;
+  font-size: 3em;
+  top: 39%;
+  transition: 0.3s;
 }
+
+.carousel_arrows:hover {
+  cursor: pointer;
+  color: #dedede;
+}
+
+.left_arrow {
+  left: 1%;
+}
+
+.right_arrow {
+  right: 41%;
+}
+
+/* Need to margin left -32.5vw for each click */
+/* Need to left nd right arrows
+Need 5 circles at the bottom */
 
 /* HowItWorks styling */
 
