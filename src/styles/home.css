@@ -204,21 +204,27 @@ header {
   overflow: hidden;
 }
 
-.carousel_outer_container {
+.carousel_position_1 {
+  left: 0%;
   display: flex;
   width: max-content;
   position: relative;
-}
-
-.carousel_position_1 {
-  left: 0%;
+  transition: 0.4s;
 }
 
 .carousel_position_2 {
   left: -33%;
+  display: flex;
+  width: max-content;
+  position: relative;
+  transition: 0.4s;
 }
 .carousel_position_3 {
   left: -66.5%;
+  display: flex;
+  width: max-content;
+  position: relative;
+  transition: 0.4s;
 }
 
 .carousel_containers {
@@ -250,6 +256,12 @@ header {
   position: absolute;
   font-size: 3em;
   top: 55%;
+}
+
+.icons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2em;
 }
 
 /* .carousel_arrows:hover {
