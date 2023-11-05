@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import ReactDOM from "react-dom/client";
 
 export default function SendMessageForm() {
   const [name, setName] = useState("");
@@ -43,8 +42,8 @@ export default function SendMessageForm() {
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Message"
         />
-        <div class="row">
-          <input type="submit" value="Send" />
+        <div>
+          <input className="sendBtn" type="submit" value="Send" />
         </div>
       </form>
     </div>

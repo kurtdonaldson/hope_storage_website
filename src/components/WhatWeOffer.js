@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"; // requires a loader
+import React, { useState } from "react"; // requires a loader
 import "../styles/home.css";
 import { BiSolidCar } from "react-icons/bi";
 import { HiCurrencyDollar } from "react-icons/hi";
@@ -7,8 +7,6 @@ import { LiaFileContractSolid } from "react-icons/lia";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { LiaLessThanSolid } from "react-icons/lia";
 import { BsKey } from "react-icons/bs";
-// import NextSlideBtn from "./NextSlideBtn";
-// import PrevSlideBtn from "./PreviousSlideBtn";
 
 function WhatWeOffer() {
   //useState to keep track of carousel position
@@ -35,7 +33,7 @@ function WhatWeOffer() {
         <div className="carousel_arrows left_arrow">
           <button
             className="btn-slide"
-            style={{ display: slidePosition == 1 ? "none" : "block" }}
+            style={{ display: slidePosition === 1 ? "none" : "block" }}
           >
             <LiaLessThanSolid className="arrow_img" onClick={prevSlide} />
           </button>
@@ -44,16 +42,16 @@ function WhatWeOffer() {
         <div className="carousel_arrows right_arrow">
           <button
             className="btn-slide"
-            style={{ display: slidePosition == 3 ? "none" : "block" }}
+            style={{ display: slidePosition === 3 ? "none" : "block" }}
           >
             <LiaGreaterThanSolid className="arrow_img" onClick={nextSlide} />
           </button>
         </div>
         <div
           className={
-            slidePosition == 1
+            slidePosition === 1
               ? "carousel_position_1"
-              : slidePosition == 2
+              : slidePosition === 2
               ? "carousel_position_2"
               : "carousel_position_3"
           }
@@ -112,16 +110,5 @@ function WhatWeOffer() {
     </div>
   );
 }
-
-// export const centerMode = () => (
-//   <Carousel
-//     infiniteLoop
-//     centerMode
-//     centerSlidePercentage={number("centerSlidePercentage", 80, {}, mainGroupId)}
-//     {...getConfigurableProps()}
-//   >
-//     {baseChildren.props.children}
-//   </Carousel>
-// );
 
 export default WhatWeOffer;
