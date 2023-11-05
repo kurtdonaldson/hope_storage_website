@@ -361,3 +361,35 @@ Need 5 circles at the bottom */
   border-radius: 20px;
   margin-bottom: 17px;
 }
+
+/* Red banner styling */
+
+.redBanner {
+  height: 124px;
+  display: flex;
+  align-items: center;
+}
+
+.redBanner h2 {
+  padding-left: 90px;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 41px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+/* Footer banner image styling */
+.footerBanner {
+  margin-left: 15px;
+  height: 285px;
+  width: 100%;
+}
+
+.footerBannerImg {
+  height: 285px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 -175px;
+}
