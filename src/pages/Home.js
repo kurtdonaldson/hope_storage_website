@@ -6,6 +6,8 @@ import HowItWorks from "../components/HowItWorks";
 import logo from "../images/hope_storage_logo.png";
 import RedBanner from "../components/RedBanner";
 import FooterBanner from "../components/FooterBanner";
+import ContactInfo from "../components/ContactInfo";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -20,6 +22,8 @@ function Home() {
       <HowItWorks />
       <RedBanner />
       <FooterBanner />
+      <ContactInfo />
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import React, { useState, useEffect } from "react"; // requires a loader
 import "../styles/home.css";
 import { BiSolidCar } from "react-icons/bi";
 import { HiCurrencyDollar } from "react-icons/hi";

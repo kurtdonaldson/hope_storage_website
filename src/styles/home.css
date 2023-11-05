@@ -151,7 +151,7 @@ header {
   /* object-position: 75% 0; */
   position: absolute;
   top: -70px;
-  right: -220px;
+  right: -100px;
   border-radius: 1800px 0px 0px 800px;
   z-index: 1;
 }
@@ -231,7 +231,7 @@ header {
   /* border: 1px solid red; */
   background: black;
   width: 32.5vw;
-  height: 260px;
+  height: 330px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,5 +391,69 @@ Need 5 circles at the bottom */
   height: 285px;
   width: 100%;
   object-fit: cover;
-  object-position: 0 -175px;
+  object-position: 0 -416px;
+}
+
+/* Contact info styling */
+
+.contactInfo {
+  height: 519px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.sendMessageFormDiv {
+  text-align: left;
+  background: black;
+  color: white;
+  width: 293px;
+  height: 404px;
+}
+
+.mapDiv {
+  width: 320px;
+}
+
+.findUsDiv {
+  width: 277px;
+}
+
+.findUsDiv h2 {
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  margin-bottom: 38px;
+}
+
+.findUsDiv p {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* Footer info */
+.footer {
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  color: white;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
 }
