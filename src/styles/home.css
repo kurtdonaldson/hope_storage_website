@@ -1,10 +1,25 @@
+/* body styling */
+
+.home_div {
+  position: relative;
+  background-color: #d0230d;
+  height: auto;
+  width: 100vw;
+}
+
 /* header styling */
 
 header {
-  background-color: #d0230d;
+  /* background-color: #d0230d; */
   color: white;
   height: 58px;
   letter-spacing: 0.3px;
+}
+
+.header_div {
+  z-index: 6;
+  background-color: #d0230d;
+  position: relative;
 }
 
 #h1 {
@@ -33,4 +48,478 @@ header {
 
 .h1_div {
   margin-left: 121px;
+}
+
+/* Navbar styling */
+
+.navlinks {
+  width: 443px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar {
+  z-index: 5;
+}
+
+/* logo styling */
+
+.logo {
+  object-fit: cover;
+  object-position: 125%;
+  width: 95px;
+  height: 95px;
+  margin-top: -10px;
+}
+
+.image_div {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-position: 75% 0;
+  border: 4px solid white;
+  position: absolute;
+  top: 17px;
+  left: 33px;
+  z-index: 6;
+}
+
+/* SafeStorage component styling */
+
+.safeStorage {
+  background-color: white;
+  height: 332px;
+  width: auto;
+  margin-left: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.safeStorage_heading_div {
+  position: relative;
+  left: 91px;
+  top: 68px;
+  width: 393px;
+}
+
+.safeStorage_heading_div h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.outerDivBottomLeftCorner {
+  position: relative;
+  background-color: pink;
+  z-index: 999;
+}
+
+.contactBtnDiv {
+  position: relative;
+  left: 91px;
+  top: 80px;
+}
+
+.contactBtnDiv button {
+  width: 168px;
+  height: 48px;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #d0230d;
+  color: white;
+  border: none;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 83.333% */
+  letter-spacing: 0.1px;
+  transition: 0.3s;
+}
+
+.contactBtnDiv button:hover {
+  background-color: #a91f0c;
+}
+
+.caravanImgDiv {
+  height: 427px;
+  width: 635px;
+  overflow: hidden;
+  /* object-position: 75% 0; */
+  position: absolute;
+  top: -70px;
+  right: -100px;
+  border-radius: 1800px 0px 0px 800px;
+  z-index: 1;
+}
+
+.caravanImg {
+  object-fit: cover;
+  object-position: 35%;
+  width: 900px;
+  height: 900px;
+  margin-top: -300px;
+}
+
+.bottomLeftCorner {
+  height: 120px;
+  width: 120px;
+  z-index: 99999;
+  background-color: green;
+  position: absolute;
+  top: 282px;
+  border-radius: 80px 0 0 320px;
+  left: 18px;
+}
+
+/* WhatWeOffer styling */
+
+.whatWerOfferDiv {
+  background-color: black;
+  position: relative;
+  color: white;
+  height: 489px;
+  width: auto;
+  margin-left: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.whatWerOfferDiv h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  top: 56px;
+}
+
+.carouselDiv {
+  overflow: hidden;
+}
+
+.carousel_position_1 {
+  left: 0%;
+  display: flex;
+  width: max-content;
+  position: relative;
+  transition: 0.4s;
+}
+
+.carousel_position_2 {
+  left: -33%;
+  display: flex;
+  width: max-content;
+  position: relative;
+  transition: 0.4s;
+}
+.carousel_position_3 {
+  left: -66.5%;
+  display: flex;
+  width: max-content;
+  position: relative;
+  transition: 0.4s;
+}
+
+.carousel_containers {
+  /* border: 1px solid red; */
+  background: black;
+  width: 32.5vw;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel_inner_containers {
+  background-color: rgb(38, 38, 38);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: 85%;
+  border-radius: 5px;
+}
+
+.carouselDiv {
+  margin-top: 90px;
+}
+
+.carousel_arrows {
+  color: #777777;
+  position: absolute;
+  font-size: 3em;
+  top: 55%;
+}
+
+.icons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+/* .carousel_arrows:hover {
+  cursor: pointer;
+  color: #dedede;
+} */
+
+.left_arrow {
+  left: 3%;
+  z-index: 99;
+}
+
+.right_arrow {
+  right: 2%;
+  z-index: 99;
+}
+
+.btn-slide {
+  height: 38px;
+  width: 45px;
+  position: relative;
+  top: 38px;
+  background-color: rgba(250, 235, 215, 0);
+  border: none;
+}
+
+.arrow_img {
+  top: -27px;
+  left: -10px;
+  position: relative;
+  color: #959595;
+  transition: 0.3s;
+}
+
+.arrow_img:hover {
+  color: #ececec;
+}
+
+/* Need to margin left -32.5vw for each click */
+/* Need to left nd right arrows
+Need 5 circles at the bottom */
+
+/* HowItWorks styling */
+
+.howItWorksDiv {
+  background-color: white;
+  height: 489px;
+  width: auto;
+  margin-left: 15px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.howItWorksDiv h2 {
+  color: #000000;
+
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+}
+
+.howItWorksDiv h3 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
+.howItWorksDiv p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.howItWorksImgDiv {
+  width: 250px;
+}
+
+.howItWorksImgContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 120px 0 120px;
+}
+
+.howItWorksImages {
+  width: 250px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 17px;
+}
+
+/* Red banner styling */
+
+.redBanner {
+  height: 124px;
+  /* width: auto; */
+  display: flex;
+  align-items: center;
+}
+
+.redBanner h2 {
+  padding-left: 90px;
+  color: white;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* Footer banner image styling */
+.footerBanner {
+  margin-left: 15px;
+  height: 285px;
+  width: 100%;
+}
+
+.footerBannerImg {
+  height: 285px;
+  width: 99%;
+  object-fit: cover;
+  object-position: 0 -342px;
+}
+
+/* Contact info styling */
+
+.contactInfo {
+  height: 519px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.sendMessageFormDiv {
+  text-align: left;
+  background: black;
+  color: white;
+  width: 293px;
+  height: 404px;
+}
+
+.sendMessageFormDiv h3 {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.sendMessageFormDiv input {
+  width: 100%;
+  height: 56px;
+  border: 2px solid rgb(123, 123, 123);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #00000000;
+  color: white;
+  padding-left: 20px;
+}
+
+::placeholder {
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.sendMessageFormDiv .sendBtn {
+  padding: 0;
+  width: 293px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #fff;
+  color: rgba(182, 182, 182, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.sendMessageFormDiv .sendBtn:hover {
+  color: white;
+  background-color: rgba(182, 182, 182, 1);
+}
+
+.mapDiv {
+  width: 320px;
+}
+
+.findUsDiv {
+  width: 277px;
+}
+
+.findUsDiv h2 {
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  margin-bottom: 38px;
+}
+
+.findUsDiv p {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* Footer info */
+.footer {
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  color: white;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* Map styling */
+
+.map-div {
+  height: 350px;
+  width: 350px;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
 }

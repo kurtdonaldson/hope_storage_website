@@ -1,18 +1,30 @@
-import "../styles/home.css";
-import React from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import Header from "../components/Header";
+import Navigation from "../components/Navigation";
+import WhatWeOffer from "../components/WhatWeOffer";
+import SafeStorage from "../components/SafeStorage";
+import HowItWorks from "../components/HowItWorks";
+import logo from "../images/hope_storage_logo.png";
+import RedBanner from "../components/RedBanner";
+import FooterBanner from "../components/FooterBanner";
+import ContactInfo from "../components/ContactInfo";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <header className="d-flex justify-content-between align-items-center container-fluid">
-      <div className="h1_div d-flex align-items-center">
-        <h1 id="h1">Hope Storage</h1>
+    <div className="home_div">
+      <Header />
+      <Navigation />
+      <SafeStorage />
+      <div className="image_div">
+        <img className="logo" src={logo} alt="" />
       </div>
-      <div className="phone_number_div d-flex align-items-center justify-content-between">
-        <FaPhoneAlt className="phone_icon" />
-        <p className="header_phone_number m-0">027 454 3813</p>
-      </div>
-    </header>
+      <WhatWeOffer />
+      <HowItWorks />
+      <RedBanner />
+      <FooterBanner />
+      <ContactInfo />
+      <Footer />
+    </div>
   );
 }
 
