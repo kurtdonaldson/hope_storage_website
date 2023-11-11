@@ -1,6 +1,7 @@
 import "../styles/home.css";
 
 import SendMessageForm from "./SendMessageForm";
+import { Map } from "./Map";
 
 const ContactInfo = () => {
   return (
@@ -8,7 +9,9 @@ const ContactInfo = () => {
       <div>
         <SendMessageForm />
       </div>
-      <div className="mapDiv">Map</div>
+      <div className="mapDiv">
+        <Map />
+      </div>
       <div className="findUsDiv">
         <h2>How to find us</h2>
         <p>027 454 3813</p>
