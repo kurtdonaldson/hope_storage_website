@@ -9,7 +9,9 @@ function Header() {
       </div>
       <div className="phone_number_div d-flex align-items-center justify-content-between">
         <FaPhoneAlt className="phone_icon" />
-        <p className="header_phone_number m-0">027 454 3813</p>
+        <a className="header_phone_number m-0" href="tel:027 454 3813">
+          027 454 3813
+        </a>
       </div>
     </header>
   );

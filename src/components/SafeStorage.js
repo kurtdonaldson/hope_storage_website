@@ -7,7 +7,7 @@ function SafeStorage() {
         <h2>Safe and secure storage</h2>
       </div>
       <div className="contactBtnDiv">
-        <button>Contact Us</button>
+        <input type="button" value="Contact Us" />
       </div>
       <div className="caravanImgDiv">
         <img className="caravanImg" src={caravan} alt="" />
