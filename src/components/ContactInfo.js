@@ -4,7 +4,7 @@ import SendMessageForm from "./SendMessageForm";
 
 const ContactInfo = () => {
   return (
-    <div className="contactInfo">
+    <div id="contactInfo" className="contactInfo">
       <div>
         <SendMessageForm />
       </div>

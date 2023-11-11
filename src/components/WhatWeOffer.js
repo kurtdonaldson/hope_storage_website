@@ -25,7 +25,7 @@ function WhatWeOffer() {
   };
 
   return (
-    <div className="whatWerOfferDiv d-flex flex-column ">
+    <div id="whatWeOfferDiv" className="whatWerOfferDiv d-flex flex-column ">
       <div>
         <h2>What we offer</h2>
       </div>

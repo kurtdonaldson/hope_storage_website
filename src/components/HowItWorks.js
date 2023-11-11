@@ -5,7 +5,7 @@ import caravanImg from "../images/caravan_photo.jpg";
 
 function HowItWorks() {
   return (
-    <div className="howItWorksDiv">
+    <div id="howItWorks" className="howItWorksDiv">
       <h2>How it works</h2>
       <div className="howItWorksImgContainer">
         <div className="howItWorksImg1 howItWorksImgDiv">

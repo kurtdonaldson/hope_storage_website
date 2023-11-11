@@ -7,9 +7,9 @@ function Navigation() {
     <Navbar className="navbar" bg="dark" data-bs-theme="dark">
       <Container className="d-flex justify-content-center">
         <Nav className="navlinks d-flex justify-content-between">
-          <Nav.Link href="#home">What we offer</Nav.Link>
-          <Nav.Link href="#features">How it works</Nav.Link>
-          <Nav.Link href="#pricing">How to find us</Nav.Link>
+          <Nav.Link href="#whatWeOfferDiv">What we offer</Nav.Link>
+          <Nav.Link href="#howItWorks">How it works</Nav.Link>
+          <Nav.Link href="#contactInfo">How to find us</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
