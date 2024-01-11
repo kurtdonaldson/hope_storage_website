@@ -3,12 +3,13 @@ import React, { useEffect, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Sidebar from "./Sidebar";
+import "../components/Navigation.css";
 
 function Navigation() {
   //State to hide links and display burger menu when screen size < 805px
   //On initial load we also want to know screen size to know what should be loaded on page
   const [burgerMenu, setBurgerMenu] = useState(
-    window.innerWidth > 835 ? false : true
+    window.innerWidth > 650 ? false : true
   );
 
   // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -16,7 +17,7 @@ function Navigation() {
 
   //Function to change windowWidth state to current window width
   const setWindowDimensions = () => {
-    window.innerWidth > 835 ? setBurgerMenu(false) : setBurgerMenu(true);
+    window.innerWidth > 650 ? setBurgerMenu(false) : setBurgerMenu(true);
   };
 
   //We use useEffect hook to call setWindowDimensions and update window width whenever width changes.
@@ -29,8 +30,12 @@ function Navigation() {
   }, []);
   return (
     <>
-      <Sidebar display={"d-flex"} />
-      <Navbar className="navbar" bg="dark" data-bs-theme="dark">
+      <Sidebar display={burgerMenu ? "d-flex sidebar" : "d-none"} />
+      <Navbar
+        className={burgerMenu ? "d-none" : "navbar"}
+        bg="dark"
+        data-bs-theme="dark"
+      >
         <Container className="d-flex justify-content-center">
           <Nav className="navlinks d-flex justify-content-between">
             <Nav.Link href="#whatWeOfferDiv">What we offer</Nav.Link>

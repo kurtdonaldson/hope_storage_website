@@ -180,7 +180,7 @@ header {
 
 /* WhatWeOffer styling */
 
-.whatWerOfferDiv {
+.whatWeOfferDiv {
   background-color: black;
   position: relative;
   color: white;
@@ -191,7 +191,7 @@ header {
   z-index: 2;
 }
 
-.whatWerOfferDiv h2 {
+.whatWeOfferDiv h2 {
   color: #fff;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -524,4 +524,33 @@ Need 5 circles at the bottom */
 .map-container {
   height: 100%;
   width: 100%;
+}
+
+/* Media queries */
+@media screen and (max-width: 650px) {
+  h1,
+  .logo,
+  .image_div {
+    display: none;
+  }
+  .safeStorage,
+  .whatWeOfferDiv {
+    margin-left: 0;
+  }
+
+  .safeStorage_heading_div {
+    left: auto;
+    width: 100%;
+  }
+
+  .safeStorage_heading_div > h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .caravanImg {
+    display: none;
+  }
 }

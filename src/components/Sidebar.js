@@ -8,13 +8,13 @@ const Sidebar = ({ display }) => {
   return (
     <div className={display}>
       <Menu>
-        <a id="home" className="menu-item" href="/">
-          Home
+        <a id="home" className="menu-item" href="#whatWeOfferDiv">
+          What we offer
         </a>
-        <a id="about" className="menu-item" href="/about">
-          About
+        <a id="about" className="menu-item" href="#howItWorks">
+          How it works
         </a>
-        <a id="contact" className="menu-item" href="/contact">
+        <a id="contact" className="menu-item" href="#contactInfo">
           Contact
         </a>
       </Menu>
