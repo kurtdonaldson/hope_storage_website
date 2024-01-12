@@ -538,6 +538,14 @@ Need 5 circles at the bottom */
     margin-left: 0;
   }
 
+  .header_phone_number {
+    font-size: 18px;
+  }
+
+  .phone_number_div {
+    width: 180px;
+  }
+
   .safeStorage_heading_div {
     left: auto;
     width: 100%;
