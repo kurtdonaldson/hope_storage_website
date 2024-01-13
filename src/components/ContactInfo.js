@@ -14,8 +14,12 @@ const ContactInfo = () => {
       </div>
       <div className="findUsDiv">
         <h2>How to find us</h2>
-        <p>027 454 3813</p>
-        <p>info@hopestorage.co.nz</p>
+        <p>
+          <a href="tel:027 454 3813">027 454 3813</a>
+        </p>
+        <p>
+          <a href="info@hopestorage.co.nz">info@hopestorage.co.nz</a>
+        </p>
         <p>
           52 Ranzau Road, Hope <br />
           Richmond, Tasman <br />
