@@ -10,7 +10,11 @@ function SafeStorage() {
         <input type="button" value="Contact Us" />
       </div>
       <div className="caravanImgDiv">
-        <img className="caravanImg" src={caravan} alt="" />
+        <img
+          className="caravanImg"
+          src={caravan}
+          alt="Tailored storage solutions for boats, caravans, and buses at Hope Storage, with a spacious parking area ensuring secure and convenient long-term storage for your recreational vehicles."
+        />
       </div>
     </div>
   );
