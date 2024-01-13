@@ -4,7 +4,11 @@ import footerBannerImg from "../images/FootBannerPhoto.jpg";
 const FooterBanner = () => {
   return (
     <div className="footerBanner">
-      <img className="footerBannerImg" src={footerBannerImg} alt="" />
+      <img
+        className="footerBannerImg"
+        src={footerBannerImg}
+        alt="Ample parking space for boats, caravans, and buses at Hope Storage, offering secure and tailored storage solutions for large vehicles and recreational assets."
+      />
     </div>
   );
 };

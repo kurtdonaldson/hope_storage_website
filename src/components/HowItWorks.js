@@ -10,7 +10,11 @@ function HowItWorks() {
       <div className="howItWorksImgContainer">
         <div className="howItWorksImg1 howItWorksImgDiv">
           <div className="howItWorksImageInnerDiv">
-            <img className="howItWorksImages" src={entrySignImg} alt="" />
+            <img
+              className="howItWorksImages"
+              src={entrySignImg}
+              alt="Entrance to Hope Storage – Your Trusted Space Solution for Secure and Convenient Storage Services"
+            />
           </div>
           <div>
             <h3>Contact us</h3>
@@ -19,7 +23,11 @@ function HowItWorks() {
         </div>
         <div className="howItWorksImg2 howItWorksImgDiv">
           <div className="howItWorksImageInnerDiv">
-            <img className="howItWorksImages" src={caravanImg} alt="" />
+            <img
+              className="howItWorksImages"
+              src={caravanImg}
+              alt="Long-term parking area at Hope Storage, providing secure and accessible storage solutions for extended periods."
+            />
           </div>
           <div>
             <h3>Arrange a time</h3>
@@ -28,7 +36,11 @@ function HowItWorks() {
         </div>
         <div className="howItWorksImg3 howItWorksImgDiv">
           <div className="howItWorksImageInnerDiv">
-            <img className="howItWorksImages" src={lockImg} alt="" />
+            <img
+              className="howItWorksImages"
+              src={lockImg}
+              alt="Secure entrance with locked gate at Hope Storage, ensuring the utmost protection for your stored belongings."
+            />
           </div>
           <div>
             <h3>Move in</h3>
