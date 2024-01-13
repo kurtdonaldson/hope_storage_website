@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // requires a loader
+import React, { useState, useEffect } from "react"; // requires a loader
 import "../styles/home.css";
 import { BiSolidCar } from "react-icons/bi";
 import { HiCurrencyDollar } from "react-icons/hi";
@@ -12,9 +12,29 @@ function WhatWeOffer() {
   //useState to keep track of carousel position
   const [slidePosition, setSlidePosition] = useState(1);
 
+  console.log(window.innerWidth);
+
+  //If window width is greater than 800px, the single carousel will NOT be used.
+  const [fiveLevelCarousel, setFiveLevelCarousel] = useState(
+    window.innerWidth > 800 ? false : true
+  );
+
+  //Function to change windowWidth state to current window width
+  const setWindowDimensions = () => {
+    window.innerWidth > 800
+      ? setFiveLevelCarousel(false)
+      : setFiveLevelCarousel(true);
+  };
+
   const nextSlide = () => {
-    if (slidePosition < 6) {
-      setSlidePosition(slidePosition + 1);
+    if (fiveLevelCarousel) {
+      if (slidePosition < 6) {
+        setSlidePosition(slidePosition + 1);
+      }
+    } else {
+      if (slidePosition < 3) {
+        setSlidePosition(slidePosition + 1);
+      }
     }
   };
 
@@ -23,6 +43,13 @@ function WhatWeOffer() {
       setSlidePosition(slidePosition - 1);
     }
   };
+
+  useEffect(() => {
+    window.addEventListener("resize", setWindowDimensions);
+    return () => {
+      window.removeEventListener("resize", setWindowDimensions);
+    };
+  }, []);
 
   return (
     <div id="whatWeOfferDiv" className="whatWeOfferDiv d-flex flex-column ">
@@ -42,7 +69,15 @@ function WhatWeOffer() {
         <div className="carousel_arrows right_arrow">
           <button
             className="btn-slide"
-            style={{ display: slidePosition === 3 ? "none" : "block" }}
+            style={{
+              display: fiveLevelCarousel
+                ? slidePosition === 5
+                  ? "none"
+                  : "block"
+                : slidePosition === 3
+                ? "none"
+                : "block",
+            }}
           >
             <LiaGreaterThanSolid className="arrow_img" onClick={nextSlide} />
           </button>
@@ -53,7 +88,11 @@ function WhatWeOffer() {
               ? "carousel_position_1"
               : slidePosition === 2
               ? "carousel_position_2"
-              : "carousel_position_3"
+              : slidePosition === 3
+              ? "carousel_position_3"
+              : slidePosition === 4
+              ? "carousel_position_4"
+              : "carousel_position_5"
           }
         >
           <div className="parking_carousel carousel_containers">

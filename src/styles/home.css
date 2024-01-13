@@ -556,6 +556,39 @@ Need 5 circles at the bottom */
 @media screen and (max-width: 800px) {
   /* Add the What we offer responsiveness here 800px */
 
+  .carousel_position_1 {
+    left: 6%;
+  }
+
+  .carousel_position_2 {
+    left: -79%;
+  }
+
+  .carousel_position_3 {
+    left: -163.5%;
+  }
+
+  .carousel_position_4 {
+    left: -248.5%;
+    display: flex;
+    width: max-content;
+    position: relative;
+    transition: 0.4s;
+  }
+
+  .carousel_position_5 {
+    left: -333.5%;
+    display: flex;
+    width: max-content;
+    position: relative;
+    transition: 0.4s;
+  }
+
+  .carousel_containers {
+    background: black;
+    width: 85vw;
+  }
+
   .howItWorksImgContainer {
     flex-direction: column;
   }
