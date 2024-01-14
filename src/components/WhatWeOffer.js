@@ -8,7 +8,7 @@ import { LiaGreaterThanSolid } from "react-icons/lia";
 import { LiaLessThanSolid } from "react-icons/lia";
 import { BsKey } from "react-icons/bs";
 
-const delay = 4000;
+const delay = 3500;
 
 function WhatWeOffer() {
   //useState to keep track of carousel position
@@ -58,10 +58,10 @@ function WhatWeOffer() {
       () =>
         fiveLevelCarousel
           ? slidePosition === 5
-            ? setSlidePosition(0)
+            ? setSlidePosition(1)
             : nextSlide()
           : slidePosition === 3
-          ? setSlidePosition(0)
+          ? setSlidePosition(1)
           : nextSlide(),
 
       delay
