@@ -7,8 +7,9 @@ import { LiaFileContractSolid } from "react-icons/lia";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { LiaLessThanSolid } from "react-icons/lia";
 import { BsKey } from "react-icons/bs";
+import { useCallback } from "react";
 
-const delay = 3500;
+const delay = 4000;
 
 function WhatWeOffer() {
   //useState to keep track of carousel position
@@ -26,7 +27,30 @@ function WhatWeOffer() {
       : setFiveLevelCarousel(true);
   };
 
-  const nextSlide = () => {
+  // const nextSlide = () => {
+  //   if (fiveLevelCarousel) {
+  //     if (slidePosition < 6) {
+  //       setSlidePosition(slidePosition + 1);
+  //     }
+  //   } else {
+  //     if (slidePosition < 3) {
+  //       setSlidePosition(slidePosition + 1);
+  //     }
+  //   }
+  // };
+  // const nextSlide = () => {
+  //   if (fiveLevelCarousel) {
+  //     if (slidePosition < 6) {
+  //       setSlidePosition(slidePosition + 1);
+  //     }
+  //   } else {
+  //     if (slidePosition < 3) {
+  //       setSlidePosition(slidePosition + 1);
+  //     }
+  //   }
+  // };
+
+  const nextSlide = useCallback(() => {
     if (fiveLevelCarousel) {
       if (slidePosition < 6) {
         setSlidePosition(slidePosition + 1);
@@ -36,7 +60,7 @@ function WhatWeOffer() {
         setSlidePosition(slidePosition + 1);
       }
     }
-  };
+  }, [fiveLevelCarousel, slidePosition]);
 
   const prevSlide = () => {
     if (slidePosition > 1) {
@@ -51,7 +75,7 @@ function WhatWeOffer() {
     };
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(
       () =>
         fiveLevelCarousel
@@ -65,8 +89,8 @@ function WhatWeOffer() {
       delay
     );
 
-    return () => {};
-  }, [slidePosition]);
+    // return () => {};
+  }, [slidePosition, fiveLevelCarousel, nextSlide]);
 
   return (
     <div id="whatWeOfferDiv" className="whatWeOfferDiv d-flex flex-column ">

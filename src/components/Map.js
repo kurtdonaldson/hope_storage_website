@@ -4,8 +4,6 @@ import "../styles/home.css";
 
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
-console.log(process.env.REACT_APP_MAP_KEY);
-
 export const Map = () => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_MAP_KEY,

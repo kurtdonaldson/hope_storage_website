@@ -13,10 +13,6 @@ export default function SendMessageForm() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  console.log(
-    "testing mother flipper" + " " + process.env.REACT_APP_SERVICE_ID
-  );
-
   const sendEmail = (e) => {
     e.preventDefault();
 

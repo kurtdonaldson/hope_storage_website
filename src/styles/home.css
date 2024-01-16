@@ -100,6 +100,10 @@ header {
   overflow: hidden;
 }
 
+.hope_storage_mobile_heading {
+  display: none;
+}
+
 .safeStorage_heading_div {
   position: relative;
   left: 91px;
@@ -178,6 +182,12 @@ header {
   left: 18px;
 }
 
+/* Mobile caravan div styling */
+
+.mobile_caravan_img_div {
+  display: none;
+}
+
 /* WhatWeOffer styling */
 
 .whatWeOfferDiv {
@@ -212,7 +222,7 @@ header {
   display: flex;
   width: max-content;
   position: relative;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 .carousel_position_2 {
@@ -220,14 +230,14 @@ header {
   display: flex;
   width: max-content;
   position: relative;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 .carousel_position_3 {
   left: -66.5%;
   display: flex;
   width: max-content;
   position: relative;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 .carousel_containers {
@@ -639,12 +649,39 @@ input::placeholder {
     margin-left: 0;
   }
 
+  .hope_storage_mobile_heading {
+    display: block;
+    position: relative;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 28px;
+    width: 100vw;
+    height: 55px;
+    padding-top: 3px;
+    background-color: lightgrey;
+    padding-left: 40px;
+  }
+
   .header_phone_number {
     font-size: 18px;
   }
 
   .phone_number_div {
     width: 180px;
+  }
+
+  .mobile_caravan_img_div {
+    display: block;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .mobile_caravan_img {
+    width: 300px;
+    height: 245px;
+    object-fit: cover;
+    transform: scale(3.5);
+    object-position: 69px -28px;
   }
 
   .whatWeOfferDiv {

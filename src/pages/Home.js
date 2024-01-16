@@ -8,6 +8,7 @@ import RedBanner from "../components/RedBanner";
 import FooterBanner from "../components/FooterBanner";
 import ContactInfo from "../components/ContactInfo";
 import Footer from "../components/Footer";
+import MobileCaravanImage from "../components/MobileCaravanImage";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <div className="image_div">
         <img className="logo" src={logo} alt="" />
       </div>
+      <MobileCaravanImage />
       <WhatWeOffer />
       <HowItWorks />
       <RedBanner />
