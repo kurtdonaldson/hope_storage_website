@@ -27,28 +27,8 @@ function WhatWeOffer() {
       : setFiveLevelCarousel(true);
   };
 
-  // const nextSlide = () => {
-  //   if (fiveLevelCarousel) {
-  //     if (slidePosition < 6) {
-  //       setSlidePosition(slidePosition + 1);
-  //     }
-  //   } else {
-  //     if (slidePosition < 3) {
-  //       setSlidePosition(slidePosition + 1);
-  //     }
-  //   }
-  // };
-  // const nextSlide = () => {
-  //   if (fiveLevelCarousel) {
-  //     if (slidePosition < 6) {
-  //       setSlidePosition(slidePosition + 1);
-  //     }
-  //   } else {
-  //     if (slidePosition < 3) {
-  //       setSlidePosition(slidePosition + 1);
-  //     }
-  //   }
-  // };
+  //Needed to wrap nextSlide in its own call back function as a new nextSlide function was being created on every render.
+  //We memoize it by useCallback
 
   const nextSlide = useCallback(() => {
     if (fiveLevelCarousel) {
@@ -76,7 +56,7 @@ function WhatWeOffer() {
   }, []);
 
   useEffect(() => {
-    setTimeout(
+    const timer = setTimeout(
       () =>
         fiveLevelCarousel
           ? slidePosition === 5
@@ -89,7 +69,9 @@ function WhatWeOffer() {
       delay
     );
 
-    // return () => {};
+    return () => {
+      clearTimeout(timer);
+    };
   }, [slidePosition, fiveLevelCarousel, nextSlide]);
 
   return (
