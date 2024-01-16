@@ -14,8 +14,6 @@ function WhatWeOffer() {
   //useState to keep track of carousel position
   const [slidePosition, setSlidePosition] = useState(1);
 
-  console.log(window.innerWidth);
-
   //If window width is greater than 800px, the single carousel will NOT be used.
   const [fiveLevelCarousel, setFiveLevelCarousel] = useState(
     window.innerWidth > 800 ? false : true
