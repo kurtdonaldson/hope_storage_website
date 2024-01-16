@@ -16,7 +16,7 @@ function HowItWorks() {
               alt="Entrance to Hope Storage – Your Trusted Space Solution for Secure and Convenient Storage Services"
             />
           </div>
-          <div>
+          <div className="pe-2">
             <h3>Contact us</h3>
             <p>Enquire online or give us a call.</p>
           </div>
@@ -29,7 +29,7 @@ function HowItWorks() {
               alt="Long-term parking area at Hope Storage, providing secure and accessible storage solutions for extended periods."
             />
           </div>
-          <div>
+          <div className="pe-2">
             <h3>Arrange a time</h3>
             <p>Look around - decide if we are right for you!</p>
           </div>
@@ -42,7 +42,7 @@ function HowItWorks() {
               alt="Secure entrance with locked gate at Hope Storage, ensuring the utmost protection for your stored belongings."
             />
           </div>
-          <div>
+          <div className="pe-2">
             <h3>Move in</h3>
             <p>You’ll have 24/7 access.</p>
           </div>
