@@ -588,7 +588,7 @@ input::placeholder {
     display: flex;
     width: max-content;
     position: relative;
-    transition: 0.4s;
+    transition: 0.6s;
   }
 
   .carousel_position_5 {
@@ -596,7 +596,7 @@ input::placeholder {
     display: flex;
     width: max-content;
     position: relative;
-    transition: 0.4s;
+    transition: 0.6s;
   }
 
   .carousel_containers {
