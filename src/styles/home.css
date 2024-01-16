@@ -450,8 +450,9 @@ Need 5 circles at the bottom */
   width: 293px;
   height: 40px;
   border-radius: 100px;
+  border: none;
   background-color: #fff;
-  color: rgba(182, 182, 182, 1);
+  color: rgb(74, 74, 74);
   font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
@@ -463,7 +464,11 @@ Need 5 circles at the bottom */
 
 .sendMessageFormDiv .sendBtn:hover {
   color: white;
-  background-color: rgba(182, 182, 182, 1);
+  background-color: rgba(74, 74, 74);
+}
+
+input::placeholder {
+  color: white !important;
 }
 
 .mapDiv {

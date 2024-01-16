@@ -1,13 +1,11 @@
 import React from "react";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 export default function SendMessageForm() {
   const form = useRef();
-
-  console.log(process.env.REACT_APP_SERVICE_ID);
-  console.log(process.env.REACT_APP_TEMPLATE_ID);
-  console.log(process.env.REACT_APP_PUBLIC_KEY);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,8 +13,18 @@ export default function SendMessageForm() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  console.log(
+    "testing mother flipper" + " " + process.env.REACT_APP_SERVICE_ID
+  );
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+    setName("");
+    setEmail("");
+    setPhone("");
+    setSubject("");
+    setMessage("");
 
     emailjs
       .sendForm(
@@ -40,43 +48,67 @@ export default function SendMessageForm() {
   return (
     <div className="sendMessageFormDiv">
       <h3>Send us a message</h3>
-      <form>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Name"
-          onSubmit={sendEmail}
-          ref={form}
-        />
-        <input
-          type="text"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-        />
-        <input
-          type="text"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          placeholder="Phone"
-        />
-        <input
-          type="text"
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
-          placeholder="Subject"
-        />
-        <input
-          type="text"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Message"
-        />
-        <div>
-          <input className="sendBtn" type="submit" value="Send" />
-        </div>
-      </form>
+
+      <Form ref={form} onSubmit={sendEmail}>
+        <Form.Group controlId="formName">
+          <Form.Control
+            type="text"
+            placeholder="Name"
+            name="name"
+            onChange={(event) => setName(event.target.value)}
+            value={name}
+            required
+          />
+        </Form.Group>
+        <Form.Group controlId="formEmail">
+          <Form.Control
+            type="email"
+            placeholder="Email"
+            name="email"
+            onChange={(event) => setEmail(event.target.value)}
+            value={email}
+            required
+          />
+        </Form.Group>
+        <Form.Group controlId="formPhone">
+          <Form.Control
+            type="text"
+            placeholder="Phone"
+            name="phone"
+            onChange={(event) => setPhone(event.target.value)}
+            value={phone}
+          />
+        </Form.Group>
+        <Form.Group controlId="formSubject">
+          <Form.Control
+            type="text"
+            placeholder="Subject"
+            name="subject"
+            onChange={(event) => setSubject(event.target.value)}
+            value={subject}
+            required
+          />
+        </Form.Group>
+        <Form.Group controlId="formMessage">
+          <Form.Control
+            type="text"
+            rows={4}
+            name="message"
+            placeholder="Message"
+            onChange={(event) => setMessage(event.target.value)}
+            value={message}
+            required
+          />
+        </Form.Group>
+        <Button
+          className="sendBtn"
+          variant="primary"
+          type="submit"
+          value="Send"
+        >
+          SUBMIT FORM
+        </Button>
+      </Form>
     </div>
   );
 }
