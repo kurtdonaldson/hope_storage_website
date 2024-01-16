@@ -1,4 +1,4 @@
-import caravan from "../images/safeStorageImg.png";
+import caravan from "../images/safeStorageImg.avif";
 
 function SafeStorage() {
   return (

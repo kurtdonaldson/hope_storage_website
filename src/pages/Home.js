@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import WhatWeOffer from "../components/WhatWeOffer";
 import SafeStorage from "../components/SafeStorage";
 import HowItWorks from "../components/HowItWorks";
-import logo from "../images/hope_storage_logo.png";
+import logo from "../images/hope_storage_logo.avif";
 import RedBanner from "../components/RedBanner";
 import FooterBanner from "../components/FooterBanner";
 import ContactInfo from "../components/ContactInfo";
