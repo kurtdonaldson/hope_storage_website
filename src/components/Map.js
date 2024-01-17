@@ -6,7 +6,7 @@ import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
 export const Map = () => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_MAP_KEY,
+    // googleMapsApiKey: process.env.REACT_APP_MAP_KEY,
   });
   const center = useMemo(
     () => ({ lat: -41.346471245591445, lng: 173.1451208066158 }),
