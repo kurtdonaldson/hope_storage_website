@@ -84,6 +84,7 @@ function WhatWeOffer() {
           <button
             className="btn-slide"
             style={{ display: slidePosition === 1 ? "none" : "block" }}
+            aria-label="left-direction-arrow"
           >
             <LiaLessThanSolid className="arrow_img" onClick={prevSlide} />
           </button>
@@ -101,6 +102,7 @@ function WhatWeOffer() {
                 ? "none"
                 : "block",
             }}
+            aria-label="left-direction-arrow"
           >
             <LiaGreaterThanSolid className="arrow_img" onClick={nextSlide} />
           </button>
