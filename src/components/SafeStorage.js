@@ -1,3 +1,4 @@
+// import caravan from "../images/safeStorageImg.avif";
 import caravan from "../images/safeStorageImg.avif";
 
 function SafeStorage() {
