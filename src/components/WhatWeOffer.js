@@ -9,7 +9,7 @@ import { LiaLessThanSolid } from "react-icons/lia";
 import { BsKey } from "react-icons/bs";
 import { useCallback } from "react";
 
-const delay = 4000;
+// const delay = 4000;
 
 function WhatWeOffer() {
   //useState to keep track of carousel position
@@ -55,24 +55,26 @@ function WhatWeOffer() {
     };
   }, []);
 
-  useEffect(() => {
-    const timer = setTimeout(
-      () =>
-        fiveLevelCarousel
-          ? slidePosition === 5
-            ? setSlidePosition(1)
-            : nextSlide()
-          : slidePosition === 3
-          ? setSlidePosition(1)
-          : nextSlide(),
+  // Timer code. Uncomment to activate automated Carousel.
 
-      delay
-    );
+  // useEffect(() => {
+  //   const timer = setTimeout(
+  //     () =>
+  //       fiveLevelCarousel
+  //         ? slidePosition === 5
+  //           ? setSlidePosition(1)
+  //           : nextSlide()
+  //         : slidePosition === 3
+  //         ? setSlidePosition(1)
+  //         : nextSlide(),
 
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [slidePosition, fiveLevelCarousel, nextSlide]);
+  //     delay
+  //   );
+
+  //   return () => {
+  //     clearTimeout(timer);
+  //   };
+  // }, [slidePosition, fiveLevelCarousel, nextSlide]);
 
   return (
     <div id="whatWeOfferDiv" className="whatWeOfferDiv d-flex flex-column ">
