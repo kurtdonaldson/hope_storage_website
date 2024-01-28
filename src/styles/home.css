@@ -270,7 +270,7 @@ header {
   color: #777777;
   position: absolute;
   font-size: 3em;
-  top: 55%;
+  top: 35%;
 }
 
 .icons {
@@ -304,6 +304,7 @@ header {
   position: relative;
   color: #959595;
   transition: 0.3s;
+  font-size: 32px;
 }
 
 .arrow_img:hover {
