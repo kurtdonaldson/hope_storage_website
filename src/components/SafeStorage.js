@@ -4,7 +4,7 @@ import caravan from "../images/safeStorageImg.avif";
 function SafeStorage() {
   return (
     <div className="safeStorage">
-      <div className="hope_storage_mobile_heading">Hope Storage</div>
+      {/* <div className="hope_storage_mobile_heading">Hope Storage</div> */}
       <div className="safeStorage_heading_div">
         <h2>Safe and secure storage</h2>
       </div>

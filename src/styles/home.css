@@ -37,14 +37,18 @@ header {
   text-decoration: none;
 }
 
+#mobileHeadingH2 {
+  display: none;
+}
+
 .phone_icon {
   font-size: 18px;
 }
 
 .phone_number_div {
-  padding: 10px;
-  margin-right: 10px;
-  width: 226px;
+  /* padding: 10px; */
+  margin-right: 5px;
+  /* width: 226px; */
   height: 50px;
 }
 
@@ -675,8 +679,19 @@ input::placeholder {
     font-size: 18px;
   }
 
-  .phone_number_div {
+  #mobileHeadingH2 {
+    display: block;
+    font-size: 23px;
+    margin: 0;
+  }
+
+  /* .phone_number_div {
     width: 180px;
+  } */
+
+  .mobileHeading {
+    position: absolute;
+    left: calc(50% - 50px);
   }
 
   .mobile_caravan_img_div {
