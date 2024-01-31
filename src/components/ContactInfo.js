@@ -1,7 +1,7 @@
 import "../styles/home.css";
+import hopeStorageMap from "../images/Hope-Storage-Map.avif";
 
 import SendMessageForm from "./SendMessageForm";
-import { Map } from "./Map";
 
 const ContactInfo = () => {
   return (
@@ -10,7 +10,11 @@ const ContactInfo = () => {
         <SendMessageForm />
       </div>
       <div className="mapDiv">
-        <Map />
+        <img
+          className="mapImg"
+          src={hopeStorageMap}
+          alt="Google Maps screenshot displaying the strategic location of our container storage facility, offering convenient access and security for business needs."
+        />
       </div>
       <div className="findUsDiv">
         <h2>How to find us</h2>
