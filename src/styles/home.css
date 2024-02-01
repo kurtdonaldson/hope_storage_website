@@ -353,7 +353,7 @@ Need 5 circles at the bottom */
 }
 
 .howItWorksDiv p {
-  font-family: Inter;
+  font-family: "Nunito", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -469,9 +469,9 @@ Need 5 circles at the bottom */
   height: 40px;
   border-radius: 100px;
   border: none;
-  background-color: #fff;
-  color: rgb(74, 74, 74);
-  font-family: Roboto;
+  background-color: rgb(201, 0, 0);
+  color: white;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
@@ -482,7 +482,7 @@ Need 5 circles at the bottom */
 
 .sendMessageFormDiv .sendBtn:hover {
   color: white;
-  background-color: rgba(74, 74, 74);
+  background-color: rgb(80, 0, 0);
 }
 
 input::placeholder {
@@ -513,10 +513,10 @@ input::placeholder {
 }
 
 .findUsDiv p {
-  font-family: Inter;
+  font-family: "Nunito", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
 }
@@ -537,11 +537,12 @@ input::placeholder {
 .footer p {
   color: white;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
+  margin-bottom: 0;
 }
 
 /* Map styling */
@@ -719,6 +720,7 @@ input::placeholder {
 
   .howItWorksImgDiv {
     width: auto;
+    padding-right: 15px;
   }
 
   .howItWorksImages {

@@ -102,7 +102,7 @@ export default function SendMessageForm() {
           type="submit"
           value="Send"
         >
-          SUBMIT FORM
+          Submit Form
         </Button>
       </Form>
     </div>
