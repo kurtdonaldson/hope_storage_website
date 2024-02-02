@@ -3,6 +3,8 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
+import "../components/SendMessageForm.css";
 
 export default function SendMessageForm() {
   const form = useRef();
@@ -47,14 +49,16 @@ export default function SendMessageForm() {
 
       <Form ref={form} onSubmit={sendEmail}>
         <Form.Group controlId="formName">
-          <Form.Control
-            type="text"
-            placeholder="Name"
-            name="name"
-            onChange={(event) => setName(event.target.value)}
-            value={name}
-            required
-          />
+          <FloatingLabel controlId="floatingInput" label="Name">
+            <Form.Control
+              type="text"
+              placeholder="Name"
+              name="name"
+              onChange={(event) => setName(event.target.value)}
+              value={name}
+              required
+            />
+          </FloatingLabel>
         </Form.Group>
         <Form.Group controlId="formEmail">
           <Form.Control
