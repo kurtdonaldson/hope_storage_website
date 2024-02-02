@@ -24,9 +24,19 @@
   color: white !important;
 }
 
-#contactInfo > div:nth-child(1) > div > form > div:nth-child(1) > div > label {
+/* After click */
+/* #contactInfo > div:nth-child(1) > div > form > div:nth-child(1) > div > label {
   color: rgb(255, 255, 255) !important;
   background-color: black !important;
   width: 55px;
   text-align: center;
-}
+} */
+
+/* Before click */
+/* #contactInfo > div:nth-child(1) > div > form > div:nth-child(1) > div > label {
+  color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 55px;
+  text-align: center;
+  top: 20px !important;
+} */
