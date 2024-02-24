@@ -2,6 +2,16 @@
 import caravan from "../images/safeStorageImg.avif";
 
 function SafeStorage() {
+  const element = document.getElementById("contactInfo");
+
+  const handleClick = () => {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  };
+
   return (
     <div className="safeStorage">
       {/* <div className="hope_storage_mobile_heading">Hope Storage</div> */}
@@ -9,7 +19,7 @@ function SafeStorage() {
         <h2>Safe and secure storage</h2>
       </div>
       <div className="contactBtnDiv">
-        <input type="button" value="Contact Us" />
+        <button onClick={handleClick}>Contact Us</button>
       </div>
       <div className="caravanImgDiv">
         <img

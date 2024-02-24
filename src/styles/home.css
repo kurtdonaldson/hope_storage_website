@@ -30,11 +30,21 @@ header {
 }
 
 .header_phone_number {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+.header_phone_number_icon {
   font-size: 25px;
   font-weight: 700;
   font-family: "Inter", sans-serif;
   color: white;
   text-decoration: none;
+  display: none;
 }
 
 #mobileHeadingH2 {
@@ -134,7 +144,7 @@ header {
   top: 80px;
 }
 
-.contactBtnDiv input {
+.contactBtnDiv button {
   width: 168px;
   height: 48px;
   border-radius: 100px;
@@ -672,6 +682,7 @@ input::placeholder {
   .image_div {
     display: none;
   }
+
   .safeStorage,
   .whatWeOfferDiv {
     margin-left: 0;
@@ -691,6 +702,11 @@ input::placeholder {
   }
 
   .header_phone_number {
+    display: none;
+  }
+
+  .header_phone_number_icon {
+    display: block;
     font-size: 18px;
   }
 
