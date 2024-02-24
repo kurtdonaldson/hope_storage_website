@@ -2,10 +2,10 @@
 import caravan from "../images/safeStorageImg.avif";
 
 function SafeStorage() {
-  const element = document.getElementById("contactInfo");
+  // const element = document.getElementById("contactInfo");
 
   const handleClick = () => {
-    element.scrollIntoView({
+    document.getElementById("contactInfo").scrollIntoView({
       behavior: "smooth",
       block: "end",
       inline: "nearest",

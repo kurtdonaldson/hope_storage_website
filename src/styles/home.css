@@ -27,6 +27,7 @@ header {
   font-size: 20px;
   font-family: "Inter", sans-serif;
   margin: 0;
+  display: none;
 }
 
 .header_phone_number {
@@ -85,21 +86,21 @@ header {
 
 .logo {
   object-fit: cover;
-  object-position: 125%;
-  width: 95px;
-  height: 95px;
-  margin-top: -10px;
+  object-position: 98%;
+  width: 133px;
+  height: 68px;
+  margin-top: -1px;
 }
 
 .image_div {
-  width: 70px;
+  width: 138px;
   height: 70px;
   overflow: hidden;
   border-radius: 50%;
   object-position: 75% 0;
   border: 4px solid white;
   position: absolute;
-  top: 17px;
+  top: 6px;
   left: 33px;
   z-index: 6;
 }
