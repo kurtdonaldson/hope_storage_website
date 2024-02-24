@@ -1,5 +1,5 @@
 import "../styles/home.css";
-import hopeStorageMap from "../images/Hope-Storage-Map.avif";
+import hopeStorageMap from "../images/Hope-Storage-Map.jpg";
 
 import SendMessageForm from "./SendMessageForm";
 

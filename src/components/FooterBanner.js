@@ -1,5 +1,5 @@
 import "../styles/home.css";
-import footerBannerImg from "../images/FootBannerPhoto.avif";
+import footerBannerImg from "../images/FootBannerPhoto.jpg";
 
 const FooterBanner = () => {
   return (

@@ -1,5 +1,4 @@
-// import caravan from "../images/safeStorageImg.avif";
-import caravan from "../images/safeStorageImg.avif";
+import caravan from "../images/safeStorageImg.jpg";
 
 function SafeStorage() {
   // const element = document.getElementById("contactInfo");

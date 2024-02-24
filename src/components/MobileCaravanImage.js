@@ -1,5 +1,5 @@
 import React from "react";
-import caravan from "../images/safeStorageImg.avif";
+import caravan from "../images/safeStorageImg.jpg";
 
 function MobileCaravanImage() {
   return (

@@ -1,7 +1,7 @@
 import "../styles/home.css";
-import entrySignImg from "../images/sign_photo.avif";
-import lockImg from "../images/lock_photo.avif";
-import caravanImg from "../images/caravan_photo.avif";
+import entrySignImg from "../images/sign_photo.jpg";
+import lockImg from "../images/lock_photo.jpg";
+import caravanImg from "../images/caravan_photo.jpg";
 
 function HowItWorks() {
   return (
