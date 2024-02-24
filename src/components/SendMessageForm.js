@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
+// import FloatingLabel from "react-bootstrap/FloatingLabel";
 import "../components/SendMessageForm.css";
 
 export default function SendMessageForm() {
@@ -49,7 +49,7 @@ export default function SendMessageForm() {
 
       <Form ref={form} onSubmit={sendEmail}>
         <Form.Group controlId="formName">
-          <FloatingLabel controlId="floatingInput" label="Name">
+          {/* <FloatingLabel controlId="floatingInput" label="Name">
             <Form.Control
               type="text"
               placeholder="Name"
@@ -58,7 +58,16 @@ export default function SendMessageForm() {
               value={name}
               required
             />
-          </FloatingLabel>
+          </FloatingLabel> */}
+
+          <Form.Control
+            type="text"
+            placeholder="Name"
+            name="name"
+            onChange={(event) => setName(event.target.value)}
+            value={name}
+            required
+          />
         </Form.Group>
         <Form.Group controlId="formEmail">
           <Form.Control

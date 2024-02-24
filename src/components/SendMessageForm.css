@@ -1,9 +1,9 @@
-.form-control:focus {
+/* .form-control:focus {
   background-color: black;
   color: white !important;
-}
+} */
 
-.form-floating > .form-control:focus {
+/* .form-floating > .form-control:focus {
   background-color: rgb(0, 0, 0);
 }
 
@@ -22,7 +22,7 @@
 .form-floating > label::after {
   background-color: black !important;
   color: white !important;
-}
+} */
 
 /* After click */
 /* #contactInfo > div:nth-child(1) > div > form > div:nth-child(1) > div > label {
