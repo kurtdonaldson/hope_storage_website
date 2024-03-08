@@ -24,7 +24,7 @@ const ContactInfo = () => {
           <a href="tel:027 454 3813">027 454 3813</a>
         </p>
         <p>
-          <a href="mailto:info@hopestorage.co.nz">info@hopestorage.co.nz</a>
+          <a href="mailto:admin@hopestorage.co.nz">admin@hopestorage.co.nz</a>
         </p>
         <p>
           52 Ranzau Road, Hope <br />
