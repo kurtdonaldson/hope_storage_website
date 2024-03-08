@@ -579,9 +579,11 @@ input::placeholder {
 /* Media queries */
 
 @media screen and (max-width: 1030px) {
-  .caravanImg {
+  .caravanImg,
+  .caravanImgDiv {
     display: none;
   }
+
   .howItWorksImgContainer {
     padding-left: 0;
     padding-right: 0;
