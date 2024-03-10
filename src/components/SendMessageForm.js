@@ -4,7 +4,6 @@ import emailjs from "@emailjs/browser";
 // import Button from "react-bootstrap/Button";
 // import Form from "react-bootstrap/Form";
 // import FloatingLabel from "react-bootstrap/FloatingLabel";
-import "../components/SendMessageForm.css";
 
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -51,8 +50,8 @@ export default function SendMessageForm() {
     <div className="sendMessageFormDiv">
       <h3>Send us a message</h3>
 
-      <form style={{ background: "white" }} ref={form} onSubmit={sendEmail}>
-        <FormGroup controlId="formName">
+      <form ref={form} onSubmit={sendEmail}>
+        <FormGroup>
           <FormControl>
             <TextField
               label="Name"
@@ -63,7 +62,7 @@ export default function SendMessageForm() {
             ></TextField>
           </FormControl>
         </FormGroup>
-        <FormGroup controlId="formEmail">
+        <FormGroup>
           <FormControl>
             <TextField
               label="Email"
@@ -74,7 +73,7 @@ export default function SendMessageForm() {
             ></TextField>
           </FormControl>
         </FormGroup>
-        <FormGroup controlId="formPhone">
+        <FormGroup>
           <FormControl>
             <TextField
               label="Phone"
@@ -84,7 +83,7 @@ export default function SendMessageForm() {
             ></TextField>
           </FormControl>
         </FormGroup>
-        <FormGroup controlId="formSubject">
+        <FormGroup>
           <FormControl>
             <TextField
               label="Subject"
@@ -95,7 +94,7 @@ export default function SendMessageForm() {
             ></TextField>
           </FormControl>
         </FormGroup>
-        <FormGroup controlId="formMessage">
+        <FormGroup>
           <FormControl>
             <TextField
               label="Message"
@@ -118,4 +117,71 @@ export default function SendMessageForm() {
       </form>
     </div>
   );
+}
+
+{
+  /* <div className="sendMessageFormDiv">
+<h3>Send us a message</h3>
+
+<Form ref={form} onSubmit={sendEmail}>
+  <Form.Group controlId="formName">
+    <Form.Control
+      type="text"
+      placeholder="Name"
+      name="name"
+      onChange={(event) => setName(event.target.value)}
+      value={name}
+      required
+    />
+  </Form.Group>
+  <Form.Group controlId="formEmail">
+    <Form.Control
+      type="email"
+      placeholder="Email"
+      name="email"
+      onChange={(event) => setEmail(event.target.value)}
+      value={email}
+      required
+    />
+  </Form.Group>
+  <Form.Group controlId="formPhone">
+    <Form.Control
+      type="text"
+      placeholder="Phone"
+      name="phone"
+      onChange={(event) => setPhone(event.target.value)}
+      value={phone}
+    />
+  </Form.Group>
+  <Form.Group controlId="formSubject">
+    <Form.Control
+      type="text"
+      placeholder="Subject"
+      name="subject"
+      onChange={(event) => setSubject(event.target.value)}
+      value={subject}
+      required
+    />
+  </Form.Group>
+  <Form.Group controlId="formMessage">
+    <Form.Control
+      type="text"
+      rows={4}
+      name="message"
+      placeholder="Message"
+      onChange={(event) => setMessage(event.target.value)}
+      value={message}
+      required
+    />
+  </Form.Group>
+  <Button
+    className="sendBtn"
+    variant="primary"
+    type="submit"
+    value="Send"
+  >
+    Submit Form
+  </Button>
+</Form>
+</div> */
 }

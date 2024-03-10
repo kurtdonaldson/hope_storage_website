@@ -461,9 +461,39 @@ Need 5 circles at the bottom */
   text-align: center;
 }
 
+/* Input label styling */
+
+/* width: Fixed (293px)
+height: Fixed (56px)
+top: 2619px
+left: 1442px
+border-radius: 4px, 4px, 0px, 0px */
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: white !important;
+  left: 7px !important;
+  top: 3px !important;
+  font-size: 1.2rem !important;
+}
+
+/* Label in focus */
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: white !important;
+  font-size: 1.2rem !important;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+  border-width: 2px !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  height: 56px !important;
+}
+
 .sendMessageFormDiv input {
   width: 100%;
-  height: 56px;
   border: 2px solid rgb(123, 123, 123);
   border-radius: 4px;
   margin-bottom: 10px;
@@ -507,6 +537,8 @@ Need 5 circles at the bottom */
 input::placeholder {
   color: white !important;
 }
+
+/* Map styling */
 
 .mapDiv {
   width: 350px;
