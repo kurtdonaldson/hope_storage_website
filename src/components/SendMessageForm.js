@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import { FormControl, FormGroup, FormLabel } from "@mui/material";
+import { FormControl, FormGroup } from "@mui/material";
 
 export default function SendMessageForm() {
   const form = useRef();
@@ -107,6 +107,7 @@ export default function SendMessageForm() {
           </FormControl>
         </FormGroup>
         <Button
+          style={{ textTransform: "none" }}
           className="sendBtn"
           variant="primary"
           type="submit"
@@ -117,71 +118,4 @@ export default function SendMessageForm() {
       </form>
     </div>
   );
-}
-
-{
-  /* <div className="sendMessageFormDiv">
-<h3>Send us a message</h3>
-
-<Form ref={form} onSubmit={sendEmail}>
-  <Form.Group controlId="formName">
-    <Form.Control
-      type="text"
-      placeholder="Name"
-      name="name"
-      onChange={(event) => setName(event.target.value)}
-      value={name}
-      required
-    />
-  </Form.Group>
-  <Form.Group controlId="formEmail">
-    <Form.Control
-      type="email"
-      placeholder="Email"
-      name="email"
-      onChange={(event) => setEmail(event.target.value)}
-      value={email}
-      required
-    />
-  </Form.Group>
-  <Form.Group controlId="formPhone">
-    <Form.Control
-      type="text"
-      placeholder="Phone"
-      name="phone"
-      onChange={(event) => setPhone(event.target.value)}
-      value={phone}
-    />
-  </Form.Group>
-  <Form.Group controlId="formSubject">
-    <Form.Control
-      type="text"
-      placeholder="Subject"
-      name="subject"
-      onChange={(event) => setSubject(event.target.value)}
-      value={subject}
-      required
-    />
-  </Form.Group>
-  <Form.Group controlId="formMessage">
-    <Form.Control
-      type="text"
-      rows={4}
-      name="message"
-      placeholder="Message"
-      onChange={(event) => setMessage(event.target.value)}
-      value={message}
-      required
-    />
-  </Form.Group>
-  <Button
-    className="sendBtn"
-    variant="primary"
-    type="submit"
-    value="Send"
-  >
-    Submit Form
-  </Button>
-</Form>
-</div> */
 }
