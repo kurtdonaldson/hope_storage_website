@@ -449,7 +449,7 @@ Need 5 circles at the bottom */
   background: rgb(229 229 229 / 0%);
   color: white;
   width: 293px;
-  height: 404px;
+  height: 430px;
 }
 
 .sendMessageFormDiv h3 {
@@ -459,6 +459,7 @@ Need 5 circles at the bottom */
   line-height: 36px;
   letter-spacing: 0em;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 form {
@@ -484,56 +485,18 @@ form {
   color: white !important;
 }
 
-/* Input label styling */
-
-/* width: Fixed (293px)
-height: Fixed (56px)
-top: 2619px
-left: 1442px
-border-radius: 4px, 4px, 0px, 0px */
-
-/* .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-  color: white !important;
-  left: 7px !important;
-  top: 3px !important;
-  font-size: 1.2rem !important;
-} */
-
-/* Label in focus */
-/* .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-  color: white !important;
-  font-size: 1.2rem !important;
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  color: #ffffff9c !important;
 }
 
-.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
-  .MuiOutlinedInput-notchedOutline {
-  border-color: white !important;
-  border-width: 2px !important;
-}
+/* Label at top */
+/* .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root */
 
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  height: 56px !important;
-} */
+/* Label at top - supposed to be hidden */
+/* .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root */
 
-/* .sendMessageFormDiv input {
-  width: 100%;
-  border: 2px solid rgb(123, 123, 123);
-  border-radius: 4px;
-  margin-bottom: 10px;
-  background-color: #00000000;
-  color: white;
-  padding-left: 20px;
-} */
-
-/* ::placeholder {
-  color: white;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  text-align: left;
-} */
+/* Normal label */
+/* .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root */
 
 .sendMessageFormDiv .sendBtn {
   padding: 0;
@@ -550,6 +513,7 @@ border-radius: 4px, 4px, 0px, 0px */
   letter-spacing: 0.10000000149011612px;
   text-align: center;
   transition: 0.3s;
+  margin-top: 8px;
 }
 
 .sendMessageFormDiv .sendBtn:hover {
