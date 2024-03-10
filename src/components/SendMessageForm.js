@@ -1,10 +1,14 @@
 import React from "react";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+// import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
 // import FloatingLabel from "react-bootstrap/FloatingLabel";
 import "../components/SendMessageForm.css";
+
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import { FormControl, FormGroup, FormLabel } from "@mui/material";
 
 export default function SendMessageForm() {
   const form = useRef();
@@ -47,68 +51,62 @@ export default function SendMessageForm() {
     <div className="sendMessageFormDiv">
       <h3>Send us a message</h3>
 
-      <Form ref={form} onSubmit={sendEmail}>
-        <Form.Group controlId="formName">
-          {/* <FloatingLabel controlId="floatingInput" label="Name">
-            <Form.Control
-              type="text"
-              placeholder="Name"
+      <form style={{ background: "white" }} ref={form} onSubmit={sendEmail}>
+        <FormGroup controlId="formName">
+          <FormControl>
+            <TextField
+              label="Name"
               name="name"
               onChange={(event) => setName(event.target.value)}
               value={name}
               required
-            />
-          </FloatingLabel> */}
-
-          <Form.Control
-            type="text"
-            placeholder="Name"
-            name="name"
-            onChange={(event) => setName(event.target.value)}
-            value={name}
-            required
-          />
-        </Form.Group>
-        <Form.Group controlId="formEmail">
-          <Form.Control
-            type="email"
-            placeholder="Email"
-            name="email"
-            onChange={(event) => setEmail(event.target.value)}
-            value={email}
-            required
-          />
-        </Form.Group>
-        <Form.Group controlId="formPhone">
-          <Form.Control
-            type="text"
-            placeholder="Phone"
-            name="phone"
-            onChange={(event) => setPhone(event.target.value)}
-            value={phone}
-          />
-        </Form.Group>
-        <Form.Group controlId="formSubject">
-          <Form.Control
-            type="text"
-            placeholder="Subject"
-            name="subject"
-            onChange={(event) => setSubject(event.target.value)}
-            value={subject}
-            required
-          />
-        </Form.Group>
-        <Form.Group controlId="formMessage">
-          <Form.Control
-            type="text"
-            rows={4}
-            name="message"
-            placeholder="Message"
-            onChange={(event) => setMessage(event.target.value)}
-            value={message}
-            required
-          />
-        </Form.Group>
+            ></TextField>
+          </FormControl>
+        </FormGroup>
+        <FormGroup controlId="formEmail">
+          <FormControl>
+            <TextField
+              label="Email"
+              name="email"
+              onChange={(event) => setEmail(event.target.value)}
+              value={email}
+              required
+            ></TextField>
+          </FormControl>
+        </FormGroup>
+        <FormGroup controlId="formPhone">
+          <FormControl>
+            <TextField
+              label="Phone"
+              name="phone"
+              onChange={(event) => setPhone(event.target.value)}
+              value={phone}
+            ></TextField>
+          </FormControl>
+        </FormGroup>
+        <FormGroup controlId="formSubject">
+          <FormControl>
+            <TextField
+              label="Subject"
+              name="subject"
+              onChange={(event) => setSubject(event.target.value)}
+              value={subject}
+              required
+            ></TextField>
+          </FormControl>
+        </FormGroup>
+        <FormGroup controlId="formMessage">
+          <FormControl>
+            <TextField
+              label="Message"
+              rows={4}
+              name="message"
+              onChange={(event) => setMessage(event.target.value)}
+              value={message}
+              required
+            ></TextField>
+          </FormControl>
+        </FormGroup>
         <Button
           className="sendBtn"
           variant="primary"
@@ -117,7 +115,7 @@ export default function SendMessageForm() {
         >
           Submit Form
         </Button>
-      </Form>
+      </form>
     </div>
   );
 }
