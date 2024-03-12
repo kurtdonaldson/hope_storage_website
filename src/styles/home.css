@@ -468,8 +468,15 @@ form {
   justify-content: space-between;
   height: 89%;
 }
+/* 
+MUI Adjustments */
 
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff91 !important;
+}
+
+/* Below is id3 conversion */
+.css-igs3ac {
   border-color: #ffffff91 !important;
 }
 
@@ -477,7 +484,17 @@ form {
   color: white !important;
 }
 
+/* Below is 14s conversion */
+.css-p0rm37 {
+  color: white !important;
+}
+
 .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: white !important;
+}
+
+/* Below is 1jy conversion */
+.css-1ald77x.Mui-focused {
   color: white !important;
 }
 
@@ -485,7 +502,17 @@ form {
   color: white !important;
 }
 
+/* Below is it8 conversion */
+.css-1x5jdmq {
+  color: white !important;
+}
+
 .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  color: #ffffff9c !important;
+}
+
+/* Below is 1jy conversion */
+.css-1ald77x {
   color: #ffffff9c !important;
 }
 
