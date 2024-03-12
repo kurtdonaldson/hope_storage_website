@@ -446,10 +446,10 @@ Need 5 circles at the bottom */
 
 .sendMessageFormDiv {
   text-align: left;
-  background: black;
+  background: rgb(229 229 229 / 0%);
   color: white;
   width: 293px;
-  height: 404px;
+  height: 430px;
 }
 
 .sendMessageFormDiv h3 {
@@ -459,27 +459,49 @@ Need 5 circles at the bottom */
   line-height: 36px;
   letter-spacing: 0em;
   text-align: center;
-}
-
-.sendMessageFormDiv input {
-  width: 100%;
-  height: 56px;
-  border: 2px solid rgb(123, 123, 123);
-  border-radius: 4px;
   margin-bottom: 10px;
-  background-color: #00000000;
-  color: white;
-  padding-left: 20px;
 }
 
-::placeholder {
-  color: white;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  text-align: left;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 89%;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff91 !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: white !important;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: white !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: white !important;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  color: #ffffff9c !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(16, 16, 16, 0.856) inset !important;
+  -webkit-text-fill-color: #fff;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(16, 16, 16, 0.711) inset !important;
+  -webkit-text-fill-color: #c7c7c7;
+}
+
+.requiredTextAsterisk::after {
+  content: "*";
+  color: red;
 }
 
 .sendMessageFormDiv .sendBtn {
@@ -497,6 +519,7 @@ Need 5 circles at the bottom */
   letter-spacing: 0.10000000149011612px;
   text-align: center;
   transition: 0.3s;
+  margin-top: 8px;
 }
 
 .sendMessageFormDiv .sendBtn:hover {
@@ -507,6 +530,8 @@ Need 5 circles at the bottom */
 input::placeholder {
   color: white !important;
 }
+
+/* Map styling */
 
 .mapDiv {
   width: 350px;
