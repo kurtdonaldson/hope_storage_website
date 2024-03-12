@@ -7,24 +7,9 @@ import emailjs from "@emailjs/browser";
 
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import {
-  FormControl,
-  FormGroup,
-  createTheme,
-  ThemeProvider,
-} from "@mui/material";
+import { FormControl, FormGroup } from "@mui/material";
 
 export default function SendMessageForm() {
-  // const theme = createTheme({
-  //   components: {
-  //     MuiFormLabel: {
-  //       styleOverrides: {
-  //         asterisk: { color: "red" },
-  //       },
-  //     },
-  //   },
-  // });
-
   const form = useRef();
 
   const [name, setName] = useState("");
@@ -60,9 +45,6 @@ export default function SendMessageForm() {
         }
       );
   };
-
-  // Wrap form in this.
-  // <ThemeProvider theme={theme}> </ThemeProvider>
 
   return (
     <div className="sendMessageFormDiv">
