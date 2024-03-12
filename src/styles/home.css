@@ -489,19 +489,20 @@ form {
   color: #ffffff9c !important;
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(16, 16, 16, 0.856) inset !important;
+  -webkit-text-fill-color: #fff;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(16, 16, 16, 0.711) inset !important;
+  -webkit-text-fill-color: #c7c7c7;
+}
+
 .requiredTextAsterisk::after {
   content: "*";
   color: red;
 }
-
-/* Label at top */
-/* .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root */
-
-/* Label at top - supposed to be hidden */
-/* .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root */
-
-/* Normal label */
-/* .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root */
 
 .sendMessageFormDiv .sendBtn {
   padding: 0;
