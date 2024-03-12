@@ -489,6 +489,11 @@ form {
   color: #ffffff9c !important;
 }
 
+.requiredTextAsterisk::after {
+  content: "*";
+  color: red;
+}
+
 /* Label at top */
 /* .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root */
 
