@@ -516,6 +516,27 @@ MUI Adjustments */
   color: #ffffff9c !important;
 }
 
+/* Hover autofil color */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(13, 13, 13) inset;
+  -webkit-text-fill-color: #ffffff;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(34, 34, 34, 0.936) inset;
+  -webkit-text-fill-color: #d7d7d7;
+}
+
+input:-webkit-autofill:required {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(13, 13, 13) inset;
+  -webkit-text-fill-color: #d7d7d7;
+}
+
+input:-webkit-autofill:required:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(34, 34, 34, 0.936) inset;
+  -webkit-text-fill-color: #d7d7d7;
+}
+
 /* Label at top */
 /* .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root */
 
