@@ -491,12 +491,12 @@ form {
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px rgba(16, 16, 16, 0.856) inset !important;
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: #fff !important;
 }
 
 input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px rgba(16, 16, 16, 0.711) inset !important;
-  -webkit-text-fill-color: #c7c7c7;
+  -webkit-text-fill-color: #c7c7c7 !important;
 }
 
 .requiredTextAsterisk::after {
