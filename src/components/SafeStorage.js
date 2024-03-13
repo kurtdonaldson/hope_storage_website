@@ -15,7 +15,7 @@ function SafeStorage() {
   return (
     <div className="safeStorage">
       <div className="safeStorage_heading_div">
-        <h2>Safe and secure storage</h2>
+        <h1>Safe and secure storage</h1>
       </div>
       <div className="contactBtnDiv">
         <button onClick={handleClick}>Contact Us</button>

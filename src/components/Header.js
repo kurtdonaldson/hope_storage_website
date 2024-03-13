@@ -4,8 +4,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 function Header() {
   return (
     <header className="header_div d-flex justify-content-between align-items-center container-fluid">
-      <div className="h1_div d-flex align-items-center">
-        <h1 id="h1">Hope Storage</h1>
+      <div className="h2_div d-flex align-items-center">
+        <h2 id="h2">Hope Storage</h2>
       </div>
       <div className="mobileHeading">
         <h2 id="mobileHeadingH2">Hope Storage</h2>

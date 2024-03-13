@@ -22,7 +22,7 @@ header {
   position: relative;
 }
 
-#h1 {
+#h2 {
   font-weight: 700;
   font-size: 20px;
   font-family: "Inter", sans-serif;
@@ -64,7 +64,7 @@ header {
   height: 50px;
 }
 
-.h1_div {
+.h2_div {
   margin-left: 121px;
 }
 
@@ -127,7 +127,7 @@ header {
   width: 393px;
 }
 
-.safeStorage_heading_div h2 {
+.safeStorage_heading_div h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 50px;
@@ -747,7 +747,7 @@ input::placeholder {
 }
 
 @media screen and (max-width: 650px) {
-  h1,
+  #h2,
   .logo,
   .image_div {
     display: none;
@@ -835,7 +835,7 @@ input::placeholder {
     width: 90vw;
   }
 
-  .safeStorage_heading_div > h2 {
+  .safeStorage_heading_div > h1 {
     font-size: 33px;
   }
 
