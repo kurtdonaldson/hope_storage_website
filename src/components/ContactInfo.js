@@ -1,5 +1,6 @@
 import "../styles/home.css";
 import hopeStorageMap from "../images/Hope-Storage-Map.jpg";
+import { FaFacebook } from "react-icons/fa";
 
 import SendMessageForm from "./SendMessageForm";
 
@@ -32,6 +33,14 @@ const ContactInfo = () => {
           New Zealand <br />
           7020
         </p>
+        <a
+          href="https://www.facebook.com/HopeStorage/"
+          target="_blank"
+          style={{ fontSize: "1.7em" }}
+          rel="noreferrer"
+        >
+          <FaFacebook />
+        </a>
       </div>
     </div>
   );
