@@ -17,7 +17,11 @@ function Home() {
       <Navigation />
       <SafeStorage />
       <div className="image_div">
-        <img className="logo" src={logo} alt="" />
+        <img
+          className="logo"
+          src={logo}
+          alt="Hope Storage. Located in Richmond, Nelson."
+        />
       </div>
       <MobileCaravanImage />
       <WhatWeOffer />
