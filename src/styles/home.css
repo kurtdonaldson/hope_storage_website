@@ -753,9 +753,13 @@ input::placeholder {
     display: none;
   }
 
-  .safeStorage,
   .whatWeOfferDiv {
     margin-left: 0;
+  }
+
+  .safeStorage {
+    margin-left: 0;
+    overflow: auto;
   }
 
   .hope_storage_mobile_heading {
