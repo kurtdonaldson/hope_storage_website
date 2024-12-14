@@ -259,7 +259,8 @@ header {
 }
 
 .carousel_containers {
-  /* border: 1px solid red; */
+  /* Arrow height changes KD-001*/
+  position: relative; /*KD-001*/
   background: black;
   width: 32.5vw;
   height: 330px;
@@ -279,6 +280,8 @@ header {
 }
 
 .carouselDiv {
+  /* Arrow height changes KD-001*/
+  position: relative; /*KD-001*/
   margin-top: 90px;
 }
 
@@ -290,7 +293,7 @@ header {
   color: #777777;
   position: absolute;
   font-size: 3em;
-  top: 35%;
+  top: calc(50% - 19px);
 }
 
 .legend {
@@ -317,7 +320,7 @@ header {
   height: 38px;
   width: 45px;
   position: relative;
-  top: 38px;
+  /* top: 38px; KD-001 */
   background-color: rgba(250, 235, 215, 0);
   border: none;
 }
